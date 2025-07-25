@@ -52,7 +52,7 @@ knowledge_base = {
     }
 }
 
-# Neo4j setup
+# Neo4j setup  
 uri = "bolt://localhost:7687"
 username = "neo4j"
 password = "arfaaaisha"
@@ -216,7 +216,7 @@ def send_to_neo4j(symptoms, diagnosis):
                     """, symptom=symptom, disease=disease, prob=prob)
 
 def main():
-    load_knowledge_from_textfile()  # Load additional knowledge using NLP (Task 4)
+    load_knowledge_from_textfile()  # Load additional knowledge using NLP 
     all_symptoms = get_all_symptoms()
     valid_symptoms = []
 

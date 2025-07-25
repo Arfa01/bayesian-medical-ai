@@ -1,4 +1,5 @@
 Allergy has symptoms Itchy Eyes, Sneezing
 Jaundice has symptoms Yellow Skin, Fatigue
 Chickenpox has symptoms Rash, Fever, Itchy Skin
-Typhoid has symptoms Fever, Headache, Abdominal Pain
+Typhoid has symptoms Fever, Headache, Abdominal Pain  
+

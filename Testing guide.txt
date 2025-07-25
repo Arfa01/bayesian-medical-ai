@@ -2,7 +2,7 @@
 
 
 
-### Terminal Testing (Python Script)
+### Terminal Testing (Python Script) 
 
 #### 1. Basic Testing with Manual Symptoms
 

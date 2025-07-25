@@ -1,0 +1,130 @@
+**Testing Guide: Bayesian Medical Diagnosis System**
+
+
+
+### Terminal Testing (Python Script)
+
+#### 1. Basic Testing with Manual Symptoms
+
+* **Run the program**:
+
+  python bayesian.py
+  
+* When asked:
+
+  "Would you like to enter a complex sentence instead? (yes/no): no"
+
+* Then enter symptoms:
+
+Symptom: Fever
+Symptom: Cough
+Symptom: done
+
+* Output should show disease probabilities and confirm Neo4j update.
+
+#### 2. **Test Invalid or Misspelled Symptoms**
+
+* Example:
+
+Symptom: Headeche
+Did you mean 'Headache'? (yes/no): yes
+Symptom: done
+
+
+#### 3. **Test Complex Sentence Input (Task 8)**
+
+* Run:
+
+python bayesian.py
+
+* Input:
+
+"Would you like to enter a complex sentence instead? (yes/no):" yes
+Enter the complex sentence: Alice has Fever and Cough, therefore she might have Flu or COVID-19
+
+
+#### 4. **Check if `knowledge.txt` loads new diseases**
+
+* Ensure file `knowledge.txt` exists in the same folder.
+* Example content:
+
+Chickenpox has symptoms Rash, Fever, Itchy Skin
+Jaundice has symptoms Yellow Skin, Fatigue
+
+* Run the script again and enter:
+
+Symptom: Rash
+Symptom: done
+
+* `Chickenpox` should appear in diagnosis.
+
+---
+
+### Neo4j Testing & Visualization
+
+#### 1. **Launch Neo4j Desktop**
+
+* Start the database instance (AI Final).
+* Click **Query** to open the Cypher browser.
+
+#### 2. **View All Relationships Between Symptoms and Diseases**
+
+
+MATCH (s:Symptom)-[r:POSSIBLY_INDICATES]->(d:Disease)
+RETURN s, r, d
+
+
+#### 3. **View All Diseases with Attributes**
+
+
+MATCH (d:Disease)
+RETURN d.name, d.severity, d.location, d.age_group
+
+
+#### 4. **View All Symptoms**
+
+
+MATCH (s:Symptom)
+RETURN s.name
+
+
+#### 5. **Find Diseases Related to a Specific Symptom**
+
+
+MATCH (s:Symptom {name: "Fever"})-[r:POSSIBLY_INDICATES]->(d:Disease)
+RETURN s, r, d
+
+
+#### 6. **Find Symptoms That Might Indicate a Specific Disease**
+
+
+MATCH (s:Symptom)-[r:POSSIBLY_INDICATES]->(d:Disease {name: "Flu"})
+RETURN s, r, d
+
+
+#### 7. **Show Probability Value of Each Relationship**
+
+
+MATCH (s:Symptom)-[r:POSSIBLY_INDICATES]->(d:Disease)
+RETURN s.name AS Symptom, d.name AS Disease, r.probability AS Probability
+ORDER BY Probability DESC
+
+
+#### 8. **Filter by Probability Threshold (e.g., > 0.7)**
+
+
+MATCH (s:Symptom)-[r:POSSIBLY_INDICATES]->(d:Disease)
+WHERE r.probability > 0.7
+RETURN s, r, d
+
+
+#### 9. **Visualize Graph for Just One Symptom**
+
+
+MATCH (s:Symptom {name: "Cough"})-[r:POSSIBLY_INDICATES]->(d:Disease)
+RETURN s, r, d
+
+
+
+
+

